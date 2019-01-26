@@ -42,7 +42,7 @@ public class StarWarsController {
     @GetMapping(path = "/starwars/planetas")
     public ResponseEntity<List<StarWarsPlanetsUseCaseResponse>> listPlanets() {
 
-        List<StarWarsPlanetsUseCaseResponse> starWarsPlanetsUseCaseResponse = starWarsUseCase.listPlanets();git
+        List<StarWarsPlanetsUseCaseResponse> starWarsPlanetsUseCaseResponse = starWarsUseCase.listPlanets();
         return new ResponseEntity<>(starWarsPlanetsUseCaseResponse, HttpStatus.OK);
     }
 
