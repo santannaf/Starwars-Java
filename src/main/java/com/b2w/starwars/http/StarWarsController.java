@@ -31,7 +31,6 @@ public class StarWarsController {
 
         try {
             StarWarsUseCaseAddPlanetResponse starWarsUseCaseResponse = starWarsUseCase.addPlanet(starWarsUseCaseRequest);
-
             return new ResponseEntity<>(starWarsUseCaseResponse, HttpStatus.OK);
         } catch (Exception erro) {
             throw new Exception("Erro ao inserir um planeta > " + erro.getMessage());
