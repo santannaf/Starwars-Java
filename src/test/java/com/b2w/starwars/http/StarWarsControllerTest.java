@@ -1,6 +1,6 @@
 package com.b2w.starwars.http;
 
-import com.b2w.starwars.http.converter.MocksConverter;
+import com.b2w.starwars.MocksConverter;
 import com.b2w.starwars.http.converter.StarWarsHttpConverter;
 import com.b2w.starwars.http.data.request.StarWarsGetRequest;
 import com.b2w.starwars.usecase.StarWarsUseCase;
