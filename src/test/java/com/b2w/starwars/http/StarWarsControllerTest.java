@@ -95,7 +95,7 @@ public class StarWarsControllerTest {
     }
 
     @Test
-    public void getPlanetByName() throws Exception {
+    public void shouldGetPlanetByName() throws Exception {
 
         String nome = "Hoth";
         StarWarsPlanetsUseCaseResponse useCaseResponse = mocksConverter.getStarWarsPlanetsUseCaseResponse();
@@ -115,7 +115,7 @@ public class StarWarsControllerTest {
     }
 
     @Test
-    public void getPlanetById() throws Exception {
+    public void shouldGetPlanetById() throws Exception {
 
         String id = "5c4cd39cf38de14eea81210a";
         StarWarsPlanetsUseCaseResponse useCaseResponse = mocksConverter.getStarWarsPlanetsUseCaseResponse();
