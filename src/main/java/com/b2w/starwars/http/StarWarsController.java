@@ -24,7 +24,7 @@ public class StarWarsController {
     private final StarWarsUseCase starWarsUseCase;
 
     @ResponseStatus(HttpStatus.OK)
-    @PostMapping(path = "/starwars")
+    @PostMapping(path = "/starwars/planeta")
     public ResponseEntity<StarWarsUseCaseAddPlanetResponse> addPlanets(@Valid @RequestBody StarWarsGetRequest starWarsGetRequest) throws Exception {
 
         StarWarsUseCaseRequest starWarsUseCaseRequest = starWarsHttpConverter.toUseCase(starWarsGetRequest);
