@@ -132,7 +132,7 @@ public class StarWarsControllerTest {
     }
 
     @Test
-    public void deletePlanet() throws Exception {
+    public void shoudlDeletePlanet() throws Exception {
 
         String id = "5c4cd39cf38de14eea81210a";
         StarWarsUseCaseDeletePlanetResponse starWarsUseCaseDeletePlanetResponse = mocksConverter.getStarWarsUseCaseDeletePlanetResponse();
