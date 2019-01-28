@@ -3,7 +3,6 @@ package com.b2w.starwars.gateway.impl;
 import com.b2w.starwars.gateway.StarWarsGateway;
 import com.b2w.starwars.gateway.data.response.StarWarsGatewayResponse;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -14,7 +13,6 @@ import java.util.Arrays;
 @RequiredArgsConstructor
 public class StarWarsGatewayImpl implements StarWarsGateway {
 
-    @Autowired
     private final RestTemplate restTemplate;
 
     @Override
