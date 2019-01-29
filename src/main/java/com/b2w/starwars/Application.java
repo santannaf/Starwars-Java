@@ -2,17 +2,17 @@ package com.b2w.starwars;
 
 import com.b2w.starwars.gateway.database.StarWarsRepository;
 import com.b2w.starwars.gateway.database.data.StarWarsDb;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@RequiredArgsConstructor
 public class Application {
 
-	@Autowired
-	private StarWarsRepository starWarsRepository;
+	private final StarWarsRepository starWarsRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
